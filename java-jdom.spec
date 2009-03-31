@@ -23,7 +23,6 @@ URL:		http://www.jdom.org/
 BuildRequires:	ant
 %{!?with_java_sun:BuildRequires:	java-gcj-compat-devel}
 %{?with_java_sun:BuildRequires:	java-sun}
-BuildRequires:	java-xerces
 BuildRequires:	jpackage-utils
 BuildRequires:	rpm >= 4.4.9-56
 BuildRequires:	rpm-javaprov
