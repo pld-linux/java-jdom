@@ -13,7 +13,7 @@
 Summary:	A Java representation of an XML document
 Name:		java-%{srcname}
 Version:	1.1
-Release:	0.1
+Release:	1
 License:	BSD-Like
 Group:		Libraries/Java
 Source0:	http://www.jdom.org/dist/binary/%{srcname}-%{version}.tar.gz
@@ -22,6 +22,7 @@ URL:		http://www.jdom.org/
 BuildRequires:	ant
 %{!?with_java_sun:BuildRequires:	java-gcj-compat-devel}
 %{?with_java_sun:BuildRequires:	java-sun}
+BuildRequires:	java-xerces
 BuildRequires:	jpackage-utils
 BuildRequires:	rpm >= 4.4.9-56
 BuildRequires:	rpm-javaprov
