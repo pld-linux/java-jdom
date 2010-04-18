@@ -1,12 +1,4 @@
 #
-# Conditional build:
-%bcond_without  javadoc         # don't build javadoc
-%if "%{pld_release}" == "ti"
-%bcond_without	java_sun	# build with gcj
-%else
-%bcond_with	java_sun	# build with java-sun
-%endif
-#
 %define		srcname	jdom
 #
 %include	/usr/lib/rpm/macros.java
@@ -21,10 +13,8 @@ Source0:	http://www.jdom.org/dist/binary/%{srcname}-%{version}.tar.gz
 # Source0-md5:	22745cbaaddb12884ed8ee09083d8fe2
 URL:		http://www.jdom.org/
 BuildRequires:	ant
-%{!?with_java_sun:BuildRequires:	java-gcj-compat-devel}
-%{?with_java_sun:BuildRequires:	java-sun}
+BuildRequires:	jdk
 BuildRequires:	jpackage-utils
-BuildRequires:	rpm >= 4.4.9-56
 BuildRequires:	rpm-javaprov
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	jpackage-utils
@@ -64,10 +54,10 @@ Demonstrations and samples for %{srcname}.
 Pliki demonstracyjne i przykłady dla pakietu %{srcname}.
 
 %package javadoc
-Summary:        %{srcname} documentation
-Summary(pl.UTF-8):      Dokumentacja do %{srcname}
-Group:          Documentation
-Requires:       jpackage-utils
+Summary:	%{srcname} documentation
+Summary(pl.UTF-8):	Dokumentacja do %{srcname}
+Group:		Documentation
+Requires:	jpackage-utils
 
 %description javadoc
 %{srcname} documentation.
