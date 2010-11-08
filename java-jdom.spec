@@ -5,12 +5,12 @@
 
 Summary:	A Java representation of an XML document
 Name:		java-%{srcname}
-Version:	1.1
-Release:	2
+Version:	1.1.1
+Release:	1
 License:	BSD-Like
 Group:		Libraries/Java
 Source0:	http://www.jdom.org/dist/binary/%{srcname}-%{version}.tar.gz
-# Source0-md5:	22745cbaaddb12884ed8ee09083d8fe2
+# Source0-md5:	0ad116194e3101fb08fab8f6f00cc58f
 URL:		http://www.jdom.org/
 BuildRequires:	ant
 BuildRequires:	jdk
@@ -66,7 +66,7 @@ Requires:	jpackage-utils
 Dokumentacja do %{srcname}.
 
 %prep
-%setup -q -n %{srcname}-%{version}
+%setup -q -n %{srcname}
 
 find -name '*.jar' | xargs rm
 find -name '*.class' | xargs rm
