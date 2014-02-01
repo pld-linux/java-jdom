@@ -1,12 +1,9 @@
-#
 %define		srcname	jdom
-#
 %include	/usr/lib/rpm/macros.java
-
 Summary:	A Java representation of an XML document
 Name:		java-%{srcname}
 Version:	1.1.1
-Release:	1
+Release:	2
 License:	BSD-Like
 Group:		Libraries/Java
 Source0:	http://www.jdom.org/dist/binary/%{srcname}-%{version}.tar.gz
@@ -19,7 +16,6 @@ BuildRequires:	rpm-javaprov
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	jpackage-utils
 Requires:	jre
-Provides:	jdom
 Obsoletes:	jdom
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
