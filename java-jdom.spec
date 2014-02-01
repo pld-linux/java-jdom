@@ -40,7 +40,7 @@ SAX, jednak może być łatwo zintegrowana zarówno z DOM jak i SAX.
 Summary:	Demo for %{srcname}
 Summary(pl.UTF-8):	Pliki demonstracyjne dla pakietu %{srcname}
 Group:		Documentation
-Requires:	%{name} = %{epoch}:%{version}-%{release}
+Requires:	%{name} = %{version}-%{release}
 Obsoletes:	jdom-demo
 
 %description demo
