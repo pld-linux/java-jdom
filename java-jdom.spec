@@ -1,5 +1,4 @@
 %define		srcname	jdom
-%include	/usr/lib/rpm/macros.java
 Summary:	A Java representation of an XML document
 Name:		java-%{srcname}
 Version:	1.1.1
