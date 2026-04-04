@@ -1,18 +1,20 @@
+%{?use_default_jdk:%use_default_jdk 8}
+
 %define		srcname	jdom
 Summary:	A Java representation of an XML document
 Name:		java-%{srcname}
 Version:	1.1.1
-Release:	3
+Release:	4
 License:	BSD-Like
 Group:		Libraries/Java
 Source0:	http://www.jdom.org/dist/binary/%{srcname}-%{version}.tar.gz
 # Source0-md5:	0ad116194e3101fb08fab8f6f00cc58f
 URL:		http://www.jdom.org/
 BuildRequires:	ant
-BuildRequires:	jdk
+%buildrequires_jdk
 BuildRequires:	jpackage-utils
 BuildRequires:	rpm-javaprov
-BuildRequires:	rpmbuild(macros) >= 1.300
+BuildRequires:	rpmbuild(macros) >= 1.556
 Requires:	jpackage-utils
 Requires:	jre
 Obsoletes:	jdom
