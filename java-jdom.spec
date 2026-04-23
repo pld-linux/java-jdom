@@ -14,7 +14,7 @@ BuildRequires:	ant
 %buildrequires_jdk
 BuildRequires:	jpackage-utils
 BuildRequires:	rpm-javaprov
-BuildRequires:	rpmbuild(macros) >= 1.556
+BuildRequires:	rpmbuild(macros) >= 2.021
 Requires:	jpackage-utils
 Obsoletes:	jdom
 BuildArch:	noarch
