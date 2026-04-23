@@ -16,7 +16,6 @@ BuildRequires:	jpackage-utils
 BuildRequires:	rpm-javaprov
 BuildRequires:	rpmbuild(macros) >= 1.556
 Requires:	jpackage-utils
-Requires:	jre
 Obsoletes:	jdom
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
