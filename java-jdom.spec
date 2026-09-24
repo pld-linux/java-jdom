@@ -4,7 +4,7 @@
 Summary:	A Java representation of an XML document
 Name:		java-%{srcname}
 Version:	1.1.1
-Release:	4
+Release:	5
 License:	BSD-Like
 Group:		Libraries/Java
 Source0:	http://www.jdom.org/dist/binary/%{srcname}-%{version}.tar.gz
